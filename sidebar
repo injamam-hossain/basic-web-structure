@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="logo"><b>WELCOME</b></div>
+        <div class="nav">
+            <a href="#HOME">HOME</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#servic">SERVIC</a>
+        </div>
+    </header>
+
+    <!-- Container -->
+    <div class="container">
+        <aside class="sidebar">
+           
+            <img src="images/1.jpg" alt="images" class="sidebar-img">
+    
+            <h3>Sidebar Menu</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Setting</a></li>
+                <li><a href="#">Security</a></li>
+            </ul>
+        </aside>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
