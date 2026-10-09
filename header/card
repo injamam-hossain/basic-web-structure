@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            min-height: 80px;
+            display: flex;
+            background-color: #032104;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 10px;
+        }
+
+        .logo {
+            font-size: 20px;
+            color: rgb(244, 160, 5);
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav a {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: green;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 17px;
+                background-color: lightcoral;
+            }
+
+            .nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+
+        .container {
+            margin: 10px;
+            border-radius: 10px;
+            background-color: aquamarine;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: lightblue;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 20px rgba(6, 162, 234, 0.2);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            color: white;
+            transform: translateY(-4px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">MYWEBSIDE</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">contact</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="icone">💻</div>
+            <h2>webdeveloper</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ab.</p>
+            <a href="#">learn more</a>
+        </div>
+        <div class="card">
+            <h2>graphics</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, cum?</p>
+        </div>
+        <div class="card">
+            <h2>ui/ux</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, est?</p>
+        </div>
+        <div class="card">
+            <h2>cricker</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, est?</p>
+        </div>
+    </div>
+</body>
+
+</html>
